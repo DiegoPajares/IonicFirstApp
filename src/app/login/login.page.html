@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <form action="" [formGroup]="loginForm">
+    <div class="loginMargin"></div>
+    <ion-item>
+      <ion-label position="fixed">
+        <ion-icon name="person-outline"></ion-icon>
+      </ion-label>
+      <ion-input placeholder="Email" formControlName="email"></ion-input>
+    </ion-item>  
+
+    <ion-item>
+      <ion-label position="fixed">
+        <ion-icon name="lock-closed-outline"></ion-icon>
+      </ion-label>
+      <ion-input type="password" placeholder="Contraseña" formControlName="password"></ion-input>
+    </ion-item><br><br>
+
+    <ion-button expand="block" (click)="login()">Login</ion-button>
+    <br>    
+    <ion-button expand="block" routerLink="/register">Create Account</ion-button>
+  </form>
+
+</ion-content>

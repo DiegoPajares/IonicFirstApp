@@ -14,4 +14,18 @@
   </ion-header>
 
   <app-explore-container name="Tab 2 page"></app-explore-container>
+
+  <ion-item>
+    <ion-label position="floating">Nombre</ion-label>
+    <ion-input [(ngModel)]="name"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Number</ion-label>
+    <ion-input [(ngModel)]="number"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-button *ngIf="!contactId" (click)="save()" color="primary">Guardar</ion-button>
+    <ion-button *ngIf="contactId" (click)="update()" color="primary">Editar</ion-button>
+  </ion-item>
+
 </ion-content>

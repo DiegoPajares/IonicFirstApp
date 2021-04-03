@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>register</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <br>
+  <form action="" [formGroup]="registerForm">
+    <div class="loginMargin"></div>
+    <ion-item>
+      <ion-label position="fixed">
+        <ion-icon name="person-outline"></ion-icon>
+      </ion-label>
+      <ion-input placeholder="Nombre" formControlName="name"></ion-input>
+    </ion-item>
+    
+    <ion-item>
+      <ion-label position="fixed">
+        <ion-icon name="person-outline"></ion-icon>
+      </ion-label>
+      <ion-input placeholder="Email" formControlName="email"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="fixed">
+        <ion-icon name="lock-closed-outline"></ion-icon>
+      </ion-label>
+      <ion-input type="password" placeholder="Contraseña" formControlName="password"></ion-input>
+    </ion-item><br><br>
+
+    <ion-button expand="block" (click)="register()">Register</ion-button>
+  </form>
+</ion-content>

@@ -1,5 +1,5 @@
 {
-  "appId": "io.ionic.starter",
+  "appId": "com.pycsolutions.firstapp",
   "appName": "FirstApp",
   "bundledWebRuntime": false,
   "npmClient": "npm",
